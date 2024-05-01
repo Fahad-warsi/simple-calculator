@@ -2,14 +2,16 @@
 
 import inquirer from "inquirer";
 
+console.log("WelCome to Fahad Warsi simple-calculator");
+
 const answer = await inquirer.prompt([
   {
-    message: "Please Enter first Number : ",
+    message: "Please Enter your first Number : ",
     type: "number",
     name: "firstNumber",
   },
   {
-    message: "Please Enter second Number : ",
+    message: "Please Enter your second Number : ",
     type: "number",
     name: "secondNumber",
   },
@@ -33,3 +35,5 @@ if (answer.operator === "Addition") {
 } else {
   console.log("Invalid operatore selected...");
 }
+
+console.log("THE END");
