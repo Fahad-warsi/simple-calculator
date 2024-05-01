@@ -23,7 +23,6 @@ const answer = await inquirer.prompt([
   },
 ]);
 
-console.log(answer);
 if (answer.operator === "Addition") {
   console.log(answer.firstNumber + answer.secondNumber);
 } else if (answer.operator === "Subtraction") {

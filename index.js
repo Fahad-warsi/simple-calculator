@@ -1,13 +1,14 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
+console.log("WelCome to Fahad Warsi simple-calculator");
 const answer = await inquirer.prompt([
     {
-        message: "Please Enter first Number : ",
+        message: "Please Enter your first Number : ",
         type: "number",
         name: "firstNumber",
     },
     {
-        message: "Please Enter second Number : ",
+        message: "Please Enter your second Number : ",
         type: "number",
         name: "secondNumber",
     },
@@ -18,7 +19,6 @@ const answer = await inquirer.prompt([
         choices: ["Addition", "Subtraction", "Multiply", "Division"],
     },
 ]);
-console.log(answer);
 if (answer.operator === "Addition") {
     console.log(answer.firstNumber + answer.secondNumber);
 }
@@ -34,3 +34,4 @@ else if (answer.operator === "Division") {
 else {
     console.log("Invalid operatore selected...");
 }
+console.log("THE END");
